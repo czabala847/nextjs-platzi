@@ -1,10 +1,8 @@
 import React from "react";
-import { Navbar } from "../components/Navbar";
 
 const About = () => {
   return (
-    <>
-      <Navbar />
+    <div className="About">
       <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam earum
@@ -18,7 +16,7 @@ const About = () => {
         officiis labore ducimus, iure mollitia dolorum dignissimos adipisci,
         sunt perferendis?
       </p>
-    </>
+    </div>
   );
 };
 

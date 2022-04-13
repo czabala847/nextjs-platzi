@@ -6,9 +6,10 @@
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@database" : ["database/db.ts"]
+      "@database" : ["database/db.ts"],
+      "@components/*" : ["components/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

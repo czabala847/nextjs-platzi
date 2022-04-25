@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { ProductSummary } from "@components/ProductSummary";
 
 const ProductItem = () => {
   const router = useRouter();
@@ -25,18 +26,7 @@ const ProductItem = () => {
 
   return (
     <div className="ProductItem">
-      {product ? (
-        <>
-          <h2>Producto {product.id}</h2>
-          <ul>
-            <li>Nombre: {product.name}</li>
-            <li>sku: {product.sku}</li>
-            <li>Precio: {product.price}</li>
-          </ul>
-        </>
-      ) : (
-        <p>No existe el producto.</p>
-      )}
+      {product ? <ProductSummary product={product} /> : null}
     </div>
   );
 };

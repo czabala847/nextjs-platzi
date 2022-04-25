@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/Footer/index.jsx", "store/AppProvider.jsx"  ],
   "exclude": [
     "node_modules"
   ]

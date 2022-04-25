@@ -1,7 +1,9 @@
 import React from "react";
 
 import { Header } from "@components/Header";
-import { Container } from "semantic-ui-react";
+
+import { ProductList } from "@components/ProductList";
+import { ProductItem } from "@components/ProductItem";
 
 const Home = () => {
   const [productList, setProductList] = React.useState<TProduct[]>([]);
@@ -18,14 +20,11 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <Container text>
-        <Header />
-        <ul>
-          {productList.map((product) => (
-            <li key={product.id}>{product.name}</li>
-          ))}
-        </ul>
-      </Container>
+      <Header />
+      <ProductList
+        data={productList}
+        render={(product) => <ProductItem key={product.id} info={product} />}
+      />
     </div>
   );
 };

@@ -1,12 +1,13 @@
 import React from "react";
 import { Navbar } from "components/Navbar";
 import { Footer } from "@components/Footer";
+import { Container } from "semantic-ui-react";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      {children}
+      <Container text>{children}</Container>
       <Footer />
     </>
   );

@@ -9,7 +9,7 @@ import { Rotten } from "@components/SVGIcons/Rotten";
 import { HeaderModal } from "./HeaderModal";
 import { useHeaderActions } from "./useHeaderActions";
 
-const Header: React.FC = () => {
+const Header = () => {
   const { info, actions } = useHeaderActions();
   const { rotten, visibleAnimation, showModal } = info;
   const { handleClick, closeModal } = actions;

@@ -2,10 +2,7 @@ import React from "react";
 
 import { Divider, Header, Table } from "semantic-ui-react";
 
-const ProductAttributes = ({
-  description,
-  ...otherAttributes
-}: TProductAttributes) => {
+const ProductAttributes = ({ description, ...otherAttributes }) => {
   return (
     <section className="container">
       <Header as="h3">About this avocado</Header>
@@ -24,9 +21,7 @@ const ProductAttributes = ({
           {Object.keys(otherAttributes).map((key) => (
             <Table.Row key={key}>
               <Table.Cell className="attr-name">{key}</Table.Cell>
-              <Table.Cell>
-                {otherAttributes[key as keyof typeof otherAttributes]}
-              </Table.Cell>
+              <Table.Cell>{otherAttributes[key]}</Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>

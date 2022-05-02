@@ -4,11 +4,7 @@ import { Item, Label } from "semantic-ui-react";
 import { ProductAttributes } from "./ProductAttributes";
 import { AddToCard } from "./AddToCard";
 
-type ProductSummaryProps = {
-  product: TProduct;
-};
-
-const ProductSummary = ({ product }: ProductSummaryProps) => {
+const ProductSummary = ({ product }) => {
   return (
     <>
       <Item.Group as="section">

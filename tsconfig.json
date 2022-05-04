@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Footer/index.jsx", "store/AppProvider.jsx", "components/Header/HeaderModal.jsx", "components/Header/index.jsx", "components/ProductItem/index.jsx", "components/ProductSummary/index.jsx", "components/ProductSummary/ProductAttributes.jsx"  ],
+, "components/Footer/index.jsx", "store/AppProvider.jsx", "components/Header/HeaderModal.jsx", "components/Header/index.jsx", "components/ProductItem/index.jsx", "components/ProductSummary/index.jsx", "components/ProductSummary/ProductAttributes.jsx", "pages/yes-or-no/yes-or-no.jsx"  ],
   "exclude": [
     "node_modules"
   ]
